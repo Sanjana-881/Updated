@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .wrapper {
+            background: url('../img/back6.png') no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .navbar {
+            height: 80px;
+            width: 100%;
+            background:rgba(242, 236, 236, 0.502);
+        }
+
+        .logo {
+            width: 200px;
+            height: auto;
+            padding: 10px 100px;
+            margin-left: -70px;
+        }
+
+        .navbar ul {
+            float: right;
+            margin-right: 20px;
+        }
+
+        .navbar ul li {
+            list-style:none;
+            margin: 0 8px;
+            display: inline-block;
+            line-height: 80px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color:black;
+            font-size: 25px;
+            padding: 6px 13px;
+            font-family:'Times New Roman', Times, serif;
+            transition: .5s;
+        }
+
+
+        .navbar ul li a:hover {
+            background: rgba(61, 123, 238, 0.618);
+            border-radius: 2px;
+        }
+        .wrapper .left{
+
+            position:absolute;
+            top: 50%;
+            left: 55%;
+            transform: translate(-90%,-50%);
+            font-family: sans-serif;
+            user-select:none;
+        }
+        .content{
+            width: 60%;
+            float:right;
+
+        }
+        .content p{
+            color: black;
+            font-weight: bold;
+            font-size: 19px;
+            font-family: 'Times New Roman', Times, serif;
+            margin-top: 90px;
+            margin-left:350px;
+            line-height: 1.5;
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="wrapper">
+    <nav class="navbar">
+        <img class="logo" src="../img/logo2.png">
+        <ul>
+            <li><a class="active" th:href="@{/Home}">Home</a></li>
+            <li><a th:href="@{/About}">About</a></li>
+            <li><a th:href="@{/Admin}">Admin</a></li>
+            <li><a th:href="@{/Employee}">Employee</a></li>
+            <li><a th:href="@{/Contact}">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class = "content">
+        <p>“THIS”, is our commitment to increase the digital ability of enterprises through integration, to assist them in building meaningful digital communities that enhance income opportunities for all.The Company Torry Harris Business Solutions (THBS), founded in 1998, is headquartered in New Jersey, USA.  As a recognized leader in API Strategy and delivery, Torry Harris brings 20+ years of focused expertise in delivering business-outcome based, niche IT solutions to accelerate enterprise digital transformation initiatives, API Management, Digital Ecosystem Enablement. The company has offices in USA, UK, Ireland, France, Austria, Germany and UAE, to serve local markets, with development centres in Bangalore and Gurugram (India).
+        </p>
+    </div>
+
+</div>
+</body>
+
+</html>

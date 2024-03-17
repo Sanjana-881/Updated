@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .wrapper {
+            background: url('../img/contact1.jpg') no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .navbar {
+            height: 80px;
+            width: 100%;
+            background: rgba(242, 236, 236, 0.502);
+        }
+
+        .logo {
+            width: 200px;
+            height: auto;
+            padding: 10px 100px;
+            margin-left: -70px;
+        }
+
+        .navbar ul {
+            float: right;
+            margin-right: 20px;
+        }
+
+        .navbar ul li {
+            list-style: none;
+            margin: 0 8px;
+            display: inline-block;
+            line-height: 80px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 25px;
+            padding: 6px 13px;
+            font-family: 'Times New Roman', Times, serif;
+            transition: .5s;
+        }
+
+        .navbar ul li a:hover {
+            background: rgba(61, 123, 238, 0.618);
+            border-radius: 2px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 200px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 8%;
+        }
+
+        .contact-info {
+            margin-top: 50px;
+        }
+
+        .contact-info p {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <nav class="navbar">
+        <img class="logo" src="../img/logo2.png">
+        <ul>
+            <li><a class="active" th:href="@{/Home}">Home</a></li>
+            <li><a th:href="@{/About}">About</a></li>
+            <li><a th:href="@{/Admin}">Admin</a></li>
+            <li><a th:href="@{/Employee}">Employee</a></li>
+            <li><a th:href="@{/Contact}">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>For more information about the company, please visit </h1>
+        <div class="contact-info">
+            <p><b>Email:</b> https://www.torryharris.com</p>
+            <p><b>Phone:</b> +1234567890</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

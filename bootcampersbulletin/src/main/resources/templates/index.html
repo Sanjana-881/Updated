@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .wrapper {
+            background: url('../img/back3.png') no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .navbar {
+            height: 80px;
+            width: 100%;
+            background:rgba(242, 236, 236, 0.502);
+        }
+
+        .logo {
+            width: 200px;
+            height: auto;
+            padding: 10px 100px;
+            margin-left: -70px;
+        }
+
+        .navbar ul {
+            float: right;
+            margin-right: 20px;
+        }
+
+        .navbar ul li {
+            list-style:none;
+            margin: 0 8px;
+            display: inline-block;
+            line-height: 80px;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color:black;
+            font-size: 25px;
+            padding: 6px 13px;
+            font-family:'Times New Roman', Times, serif;
+            transition: .5s;
+        }
+
+
+        .navbar ul li a:hover {
+            background: rgba(61, 123, 238, 0.618);
+            border-radius: 2px;
+        }
+        .wrapper .left{
+
+            position:absolute;
+            top: 50%;
+            left: 55%;
+            transform: translate(-90%,-50%);
+            font-family: sans-serif;
+            user-select:none;
+        }
+        .center h1{
+            margin: 150px 0px;
+            color: white;
+            font-size: 70px;
+            font-weight: bold;
+            width:900px;
+            text-align: center;
+        }
+        .box{
+            margin:-120px 90px;
+            font-size:40px;
+            font-weight: bold;
+            opacity: 0;
+            position: absolute;
+            width: 50%;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            color:rgb(96, 201, 240);
+        }
+        .b1{
+            animation: ani1 15s infinite;
+        }
+
+        .b2{
+            animation: ani2 15s infinite;
+        }
+        .b3{
+            animation: ani3 15s infinite;
+        }
+        .b4{
+            animation: ani4 15s infinite;
+        }
+
+        @keyframes ani1 {
+            0%{
+                opacity:0;
+            }
+            10%{
+                opacity: 1;
+            }
+            20%{
+                opacity: 0;
+            }
+
+        }
+        @keyframes ani2 {
+            20%{
+                opacity:0;
+            }
+            30%{
+                opacity: 1;
+            }
+            40%{
+                opacity: 0;
+            }
+
+        }
+        @keyframes ani3 {
+            40%{
+                opacity:0;
+            }
+            50%{
+                opacity: 1;
+            }
+            60%{
+                opacity: 0;
+            }
+
+        }
+        @keyframes ani4 {
+            60%{
+                opacity:0;
+            }
+            70%{
+                opacity: 1;
+            }
+            80%{
+                opacity: 0;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+<div class="wrapper">
+    <nav class="navbar">
+        <img class="logo" src="../img/logo2.png">
+        <ul>
+            <li><a class="active" th:href="@{/Home}">Home</a></li>
+            <li><a th:href="@{/About}">About</a></li>
+            <li><a th:href="@{/Admin}">Admin</a></li>
+            <li><a th:href="@{/Employee}">Employee</a></li>
+            <li><a th:href="@{/Contact}">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="center">
+        <h1>Torry Harris Integration Solutions</h1>
+        <div class = "text-wrapper">
+            <div class = "box b1">Mindful IT Solution</div>
+            <div class = "box b2">25 years of Success</div>
+            <div class = "box b3">Revolutionary in Digital Ecosystem</div>
+            <div class = "box b4">DigitaL Transformation</div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
